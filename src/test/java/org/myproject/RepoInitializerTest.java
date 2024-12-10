@@ -1,36 +1,13 @@
 package org.myproject;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class RepoInitializerTest {
-
-    private File testDir;
-
-    @BeforeEach
-    public void setUp() {
-        // Create a temporary directory for testing
-        testDir = new File("testRepo");
-        if (!testDir.exists() && !testDir.mkdirs()) {
-            throw new RuntimeException("Failed to create test directory.");
-        }
-    }
-
-    @AfterEach
-    public void tearDown() {
-        // Clean up the temporary directory after each test
-        if (testDir.exists()) {
-            deleteDirectory(testDir);
-        }
-    }
+public class RepoInitializerTest extends BaseTest {
 
     @Test
     public void testCreatesGitDirectory() throws IOException {
@@ -68,15 +45,4 @@ public class RepoInitializerTest {
         assertEquals(expectedContent, actualContent, "HEAD file content should match");
     }
 
-    private void deleteDirectory(File file) {
-        if (file.isDirectory()) {
-            for (File child : Objects.requireNonNull(file.listFiles())) {
-                deleteDirectory(child);
-            }
-        }
-        boolean deleted = file.delete();
-        if (!deleted) {
-            System.err.println("Failed to delete: " + file.getAbsolutePath());
-        }
-    }
 }
