@@ -15,7 +15,7 @@ git-vcs-clone is a lightweight Git-like version control system implemented in Ja
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Xolani-M/git-vcs-clone.git
    cd git-vcs-clone
    ```
 
@@ -93,4 +93,4 @@ The `RepoInitializerTest` ensures that:
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the sageNinja License.
