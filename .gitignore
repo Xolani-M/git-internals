@@ -1,0 +1,22 @@
+# Maven target directory (build artifacts)
+target/
+
+# Compiled class files
+*.class
+
+# JAR files
+*.jar
+
+# Maven build info
+*.lst
+*.properties
+*.xml
+
+# IntelliJ IDEA project files
+.idea/
+
+# Logs
+*.log
+
+# Test reports
+surefire-reports/

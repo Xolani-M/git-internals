@@ -1,4 +1,8 @@
 package org.myproject;
 
-public class BlobReaderTest {
+
+
+public class BlobReaderTest extends BaseTest {
+
+
 }
