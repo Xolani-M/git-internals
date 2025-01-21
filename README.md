@@ -1,6 +1,6 @@
-# git-vcs-clone
+# git-internals
 
-git-vcs-clone is a lightweight Git-like version control system implemented in Java. It allows you to interact with repositories, read Git objects, and perform basic operations similar to Git commands.
+git-internals is a lightweight Git-like version control system implemented in Java. It allows you to interact with repositories, read Git objects, and perform basic operations similar to Git commands.
 
 ## Features
 - Initialize a new Git repository.
